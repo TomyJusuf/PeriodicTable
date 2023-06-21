@@ -1,0 +1,653 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*  ***Colors*** */
+  --alkali-metals: rgb(6, 51, 53);
+  --alkaline-earth-metal: rgb(110, 32, 49);
+  --transition-metals: rgb(31, 23, 71);
+  --post-trasition-metals: rgb(27, 58, 52);
+  --metalloids: rgb(70, 51, 19);
+  --reactive-non-metals: rgb(14, 35, 68);
+  --noble-gases: rgb(98, 56, 66);
+  --lanthanides: rgb(0, 74, 119);
+  --actinides: rgb(97, 59, 40);
+  --unknown-properties: rgb(70, 71, 76);
+
+  /* ***Font*** */
+  --ff: "Noto Sans Tangsa", sans-serif;
+}
+body {
+  background-color: rgb(11, 38, 65);
+  font-size: 65%;
+}
+.container {
+  position: relative;
+  display: grid;
+  max-width: 1200px;
+  height: 100%;
+  margin: 30px auto 20px;
+  grid-template-columns: repeat(18, 1fr);
+  column-gap: 0.2rem;
+  row-gap: 0.2rem;
+}
+
+.container > .card {
+  font-weight: 100;
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 1px 1px 5px 2px rgb(112, 112, 106);
+}
+.container .card {
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+}
+.space-between {
+  width: 100%;
+  display: flex;
+  margin-left: 5px;
+  justify-content: space-between;
+}
+
+.container > .card > .space-between {
+  height: 20px;
+}
+.atomic--number {
+  font-size: 10px;
+  align-self: center;
+  font-family: var(--ff);
+}
+.weight {
+  display: none;
+  font-size: 10px;
+  align-self: center;
+  margin-right: 5px;
+  font-family: var(--ff);
+}
+
+.direction-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.direction-column > .shortcut {
+  justify-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+  display: inline-block;
+  font-weight: 300;
+  flex-basis: 50px;
+  font-size: 30px;
+  font-family: var(--ff);
+}
+.direction-column > .name {
+  overflow: hidden;
+  width: 50px;
+  font-family: var(--ff);
+}
+
+.card:nth-of-type(57),
+.card:nth-of-type(58),
+.card:nth-of-type(59),
+.card:nth-of-type(60),
+.card:nth-of-type(61),
+.card:nth-of-type(62),
+.card:nth-of-type(63),
+.card:nth-of-type(64),
+.card:nth-of-type(65),
+.card:nth-of-type(66),
+.card:nth-of-type(67),
+.card:nth-of-type(68),
+.card:nth-of-type(69),
+.card:nth-of-type(70),
+.card:nth-of-type(71) {
+  margin-top: 60%;
+}
+.card:nth-of-type(1) {
+  grid-column: 1/2;
+}
+
+.card:nth-of-type(2) {
+  grid-column: 18/18;
+}
+
+.card:nth-of-type(4) {
+  grid-column: 2/3;
+}
+.card:nth-of-type(5) {
+  grid-column: 13/14;
+}
+
+.card:nth-of-type(6) {
+  grid-column: 14/15;
+}
+
+.card:nth-of-type(13) {
+  grid-column: 13/14;
+}
+
+.card:nth-of-type(57) {
+  grid-column: 3/4;
+}
+
+.card:nth-of-type(58) {
+  grid-column: 4/5;
+}
+.card:nth-of-type(72) {
+  grid-column: 4/5;
+}
+
+.card:nth-of-type(104) {
+  grid-column: 4/5;
+}
+
+.card:nth-of-type(59) {
+  grid-column: 5/6;
+}
+
+.card:nth-of-type(60) {
+  grid-column: 6/7;
+}
+.card:nth-of-type(61) {
+  grid-column: 7/8;
+}
+.card:nth-of-type(62) {
+  grid-column: 8/9;
+}
+.card:nth-of-type(63) {
+  grid-column: 9/10;
+}
+.card:nth-of-type(64) {
+  grid-column: 10/11;
+}
+.card:nth-of-type(65) {
+  grid-column: 11/12;
+}
+.card:nth-of-type(66) {
+  grid-column: 12;
+}
+.card:nth-of-type(67) {
+  grid-column: 13;
+}
+.card:nth-of-type(68) {
+  grid-column: 14;
+}
+.card:nth-of-type(69) {
+  grid-column: 15;
+}
+.card:nth-of-type(70) {
+  grid-column: 16;
+}
+.card:nth-of-type(71) {
+  grid-column: 17;
+}
+.card:nth-of-type(57),
+.card:nth-of-type(58),
+.card:nth-of-type(59),
+.card:nth-of-type(60),
+.card:nth-of-type(61),
+.card:nth-of-type(62),
+.card:nth-of-type(63),
+.card:nth-of-type(64),
+.card:nth-of-type(65),
+.card:nth-of-type(66),
+.card:nth-of-type(67),
+.card:nth-of-type(68),
+.card:nth-of-type(69),
+.card:nth-of-type(70),
+.card:nth-of-type(71) {
+  grid-row: 8/9;
+}
+.card:nth-of-type(89) {
+  grid-column: 3/4;
+}
+
+.card:nth-of-type(90) {
+  grid-column: 4;
+}
+.card:nth-of-type(91) {
+  grid-column: 5;
+}
+.card:nth-of-type(92) {
+  grid-column: 6;
+}
+.card:nth-of-type(93) {
+  grid-column: 7;
+}
+.card:nth-of-type(94) {
+  grid-column: 8;
+}
+.card:nth-of-type(95) {
+  grid-column: 9;
+}
+.card:nth-of-type(96) {
+  grid-column: 10;
+}
+.card:nth-of-type(97) {
+  grid-column: 11;
+}
+.card:nth-of-type(98) {
+  grid-column: 12;
+}
+.card:nth-of-type(99) {
+  grid-column: 13;
+}
+.card:nth-of-type(100) {
+  grid-column: 14;
+}
+.card:nth-of-type(101) {
+  grid-column: 15;
+}
+.card:nth-of-type(102) {
+  grid-column: 16;
+}
+.card:nth-of-type(103) {
+  grid-column: 17;
+}
+
+.card:nth-of-type(89),
+.card:nth-of-type(90),
+.card:nth-of-type(91),
+.card:nth-of-type(92),
+.card:nth-of-type(93),
+.card:nth-of-type(94),
+.card:nth-of-type(95),
+.card:nth-of-type(96),
+.card:nth-of-type(97),
+.card:nth-of-type(98),
+.card:nth-of-type(99),
+.card:nth-of-type(100),
+.card:nth-of-type(101),
+.card:nth-of-type(102),
+.card:nth-of-type(103) {
+  grid-row: 9/10;
+}
+
+.card:nth-of-type(3),
+.card:nth-of-type(11),
+.card:nth-of-type(19),
+.card:nth-of-type(37),
+.card:nth-of-type(55),
+.card:nth-of-type(87) {
+  background-color: var(--alkali-metals);
+}
+
+.card:nth-of-type(4),
+.card:nth-of-type(12),
+.card:nth-of-type(20),
+.card:nth-of-type(38),
+.card:nth-of-type(56),
+.card:nth-of-type(88) {
+  background-color: var(--alkaline-earth-metal);
+}
+
+.card:nth-of-type(21),
+.card:nth-of-type(22),
+.card:nth-of-type(23),
+.card:nth-of-type(24),
+.card:nth-of-type(25),
+.card:nth-of-type(26),
+.card:nth-of-type(27),
+.card:nth-of-type(28),
+.card:nth-of-type(29),
+.card:nth-of-type(30),
+.card:nth-of-type(39),
+.card:nth-of-type(40),
+.card:nth-of-type(41),
+.card:nth-of-type(42),
+.card:nth-of-type(43),
+.card:nth-of-type(44),
+.card:nth-of-type(45),
+.card:nth-of-type(46),
+.card:nth-of-type(47),
+.card:nth-of-type(48),
+.card:nth-of-type(72),
+.card:nth-of-type(73),
+.card:nth-of-type(74),
+.card:nth-of-type(75),
+.card:nth-of-type(76),
+.card:nth-of-type(77),
+.card:nth-of-type(78),
+.card:nth-of-type(79),
+.card:nth-of-type(80),
+.card:nth-of-type(104),
+.card:nth-of-type(105),
+.card:nth-of-type(106),
+.card:nth-of-type(107),
+.card:nth-of-type(108) {
+  background-color: var(--transition-metals);
+}
+
+.card:nth-of-type(13),
+.card:nth-of-type(31),
+.card:nth-of-type(49),
+.card:nth-of-type(50),
+.card:nth-of-type(81),
+.card:nth-of-type(82),
+.card:nth-of-type(83),
+.card:nth-of-type(84),
+.card:nth-of-type(85) {
+  background-color: var(--post-trasition-metals);
+}
+.card:nth-of-type(5),
+.card:nth-of-type(14),
+.card:nth-of-type(32),
+.card:nth-of-type(33),
+.card:nth-of-type(51),
+.card:nth-of-type(52) {
+  background-color: var(--metalloids);
+}
+.card:nth-of-type(1),
+.card:nth-of-type(6),
+.card:nth-of-type(7),
+.card:nth-of-type(8),
+.card:nth-of-type(9),
+.card:nth-of-type(15),
+.card:nth-of-type(16),
+.card:nth-of-type(17),
+.card:nth-of-type(34),
+.card:nth-of-type(35),
+.card:nth-of-type(53) {
+  background-color: var(--reactive-non-metals);
+}
+
+.card:nth-of-type(2),
+.card:nth-of-type(10),
+.card:nth-of-type(18),
+.card:nth-of-type(36),
+.card:nth-of-type(54),
+.card:nth-of-type(86) {
+  background-color: var(--noble-gases);
+}
+.card:nth-of-type(57),
+.card:nth-of-type(58),
+.card:nth-of-type(59),
+.card:nth-of-type(60),
+.card:nth-of-type(61),
+.card:nth-of-type(62),
+.card:nth-of-type(63),
+.card:nth-of-type(64),
+.card:nth-of-type(65),
+.card:nth-of-type(66),
+.card:nth-of-type(67),
+.card:nth-of-type(68),
+.card:nth-of-type(69),
+.card:nth-of-type(70),
+.card:nth-of-type(71) {
+  background-color: var(--lanthanides);
+}
+
+.card:nth-of-type(89),
+.card:nth-of-type(90),
+.card:nth-of-type(91),
+.card:nth-of-type(92),
+.card:nth-of-type(93),
+.card:nth-of-type(94),
+.card:nth-of-type(95),
+.card:nth-of-type(96),
+.card:nth-of-type(97),
+.card:nth-of-type(98),
+.card:nth-of-type(99),
+.card:nth-of-type(100),
+.card:nth-of-type(101),
+.card:nth-of-type(102),
+.card:nth-of-type(103) {
+  background-color: var(--actinides);
+}
+
+.card:nth-of-type(109),
+.card:nth-of-type(110),
+.card:nth-of-type(111),
+.card:nth-of-type(112),
+.card:nth-of-type(113),
+.card:nth-of-type(114),
+.card:nth-of-type(115),
+.card:nth-of-type(116),
+.card:nth-of-type(117),
+.card:nth-of-type(118) {
+  background-color: var(--unknown-properties);
+}
+
+.card:hover {
+  transform: scale(1.8);
+  border: none;
+  z-index: 10;
+  box-shadow: 1px 1px 15px 3px rgb(236, 214, 154);
+  color: rgb(230, 224, 224);
+}
+.card:hover .weight {
+  display: block;
+}
+
+.metal-bars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+.bar-card {
+  display: flex;
+  width: 230px;
+  padding: 10px;
+  color: #fff;
+  text-align: justify;
+}
+input {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+label {
+  font-size: 19px;
+  font-family: var(--ff);
+  font-weight: 300;
+  text-decoration: underline;
+  cursor: pointer;
+}
+input[type="radio"] {
+  border: 4px solid white;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  transition: all ease-in 0.2s;
+}
+
+#alkMetal {
+  box-shadow: 0 0 0 3px var(--alkali-metals);
+  background-color: var(--alkali-metals);
+}
+
+#alk-earth-metal {
+  box-shadow: 0 0 0 3px var(--alkaline-earth-metal);
+  background-color: var(--alkaline-earth-metal);
+}
+#transition-metal {
+  box-shadow: 0 0 0 3px var(--transition-metals);
+  background-color: var(--transition-metals);
+}
+#post-transition-metals {
+  box-shadow: 0 0 0 3px var(--post-trasition-metals);
+  background-color: var(--post-trasition-metals);
+}
+
+#metalloids {
+  box-shadow: 0 0 0 3px var(--metalloids);
+  background-color: var(--metalloids);
+}
+
+#reactive-non-metals {
+  box-shadow: 0 0 0 3px var(--reactive-non-metals);
+  background-color: var(--reactive-non-metals);
+}
+
+#noble-gases {
+  box-shadow: 0 0 0 3px var(--noble-gases);
+  background-color: var(--noble-gases);
+}
+
+#lanthanides {
+  box-shadow: 0 0 0 3px var(--lanthanides);
+  background-color: var(--lanthanides);
+}
+
+#actinides {
+  box-shadow: 0 0 0 3px var(--actinides);
+  background-color: var(--actinides);
+}
+#unknown-properties {
+  box-shadow: 0 0 0 3px var(--unknown-properties);
+  background-color: var(--unknown-properties);
+}
+
+.atom {
+  position: relative;
+  top: -43rem;
+  margin: 0 auto;
+  width: 150px;
+}
+.orbit {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  margin: -100px -50px;
+  border: 4px solid rgb(90, 207, 184);
+  border-radius: 50%;
+}
+.rot45 {
+  z-index: 6;
+  transform: rotate(45deg);
+}
+.rot90 {
+  z-index: 4;
+  transform: rotate(90deg);
+}
+.rot135 {
+  z-index: 6;
+  transform: rotate(135deg);
+}
+
+.prot {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin: 95px 45px;
+  border-radius: 50%;
+  background-color: rgb(59, 32, 0);
+  background-color: rgba(233, 235, 114, 0.7);
+  animation: pulse 5s infinite;
+}
+
+.elec {
+  position: absolute;
+  top: 96px;
+  left: -6px;
+}
+.elec:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(231, 192, 18, 0.945);
+}
+
+.sp1 {
+  animation: lr 10s infinite;
+}
+.sp1:after {
+  animation: ud 10s infinite;
+}
+.sp2 {
+  animation: lr 6s infinite;
+}
+.sp2:after {
+  animation: ud 6s infinite;
+}
+.sp3 {
+  animation: lr 16s infinite;
+}
+.sp3:after {
+  animation: ud 16s infinite;
+}
+.sp4 {
+  animation: lr 5s infinite;
+}
+.sp4:after {
+  animation: ud 5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    background-color: rgba(59, 32, 0, 0.7);
+  }
+  50% {
+    background-color: rgba(204, 132, 0, 0.8);
+    transform: scale(3);
+  }
+}
+
+@keyframes lr {
+  0% {
+    animation-timing-function: ease-in;
+    transform: translateX(0px);
+  }
+  25% {
+    animation-timing-function: ease-out;
+    transform: translateX(51px);
+  }
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateX(104px);
+  }
+  75% {
+    animation-timing-function: ease-out;
+    transform: translateX(51px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes ud {
+  0% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  25% {
+    animation-timing-function: ease-in;
+    transform: translateY(-102px);
+  }
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  75% {
+    animation-timing-function: ease-in;
+    transform: translateY(102px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

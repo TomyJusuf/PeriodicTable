@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="style.css">
+ <title>title</title>
+</head>
+
+<body>
+ <!-- periodic contaienr -->
+ <div class="container" id="container"></div>
+
+ <!-- atom animation -->
+ <div class="atom">
+  <div class="orbit">
+   <div class="prot"></div>
+   <div class="elec sp1"></div>
+  </div>
+  <div class="orbit rot45">
+   <div class="elec sp2"></div>
+  </div>
+  <div class="orbit rot90">
+   <div class="elec sp3"></div>
+  </div>
+  <div class="orbit rot135">
+   <div class="elec sp4"></div>
+  </div>
+ </div>
+
+ <!-- Metal bars -->
+ <form class="metal-bars">
+  <div class="bar-card " id="b1">
+   <input type="radio" name="metals" id="alkMetal" value="alkMetal" class="alk-metal" id="radio-box"></input>
+   <label for="alkMetal">Alkali metals</label>
+  </div>
+  <div class="bar-card" id="b2">
+   <input name="metals" type="radio" id="alk-earth-metal" value="alk-earth-metal" id="radio-box"></input>
+   <label for="alk-earth-metal">Alkaline earth metals</label>
+  </div>
+  <div class="bar-card" id="b3">
+   <input name="metals" type="radio" id="transition-metal" value="transition-metal" id="radio-box"></input>
+   <label for="transition-metal">Transition metals</label>
+  </div>
+  <div class="bar-card" id="b4">
+   <input name="metals" type="radio" id="post-transition-metals" value="post-transition-metals" id="radio-box"></input>
+   <label for="post-transition-metals">Post-transition metals</label>
+  </div>
+  <div class="bar-card" id="b5">
+   <input name="metals" type="radio" id="metalloids" value="metalloids" id="radio-box"></input>
+   <label for="metalloids">Metalloids</label>
+  </div>
+  <div class="bar-card" id="b6">
+   <input name="metals" type="radio" id="reactive-non-metals" value="Reactive non-metals" id="radio-box"></input>
+   <label for="reactive-non-metals">Reactive non-metals</label>
+  </div>
+  <div class="bar-card" id="b7">
+   <input name="metals" type="radio" id="noble-gases" value="Noble gases" id="radio-box"></input>
+   <label for="noble-gases">Noble gases</label>
+  </div>
+  <div class="bar-card" id="b8">
+   <input name="metals" type="radio" id="lanthanides" value="lanthanides" id="radio-box"></input>
+   <label for="lanthanides">Lanthanides</label>
+  </div>
+  <div class="bar-card" id="b9">
+   <input name="metals" type="radio" id="actinides" value="actinides" id="radio-box"></input>
+   <label for="actinides">Actinides</label>
+  </div>
+  <div class="bar-card" id="b10">
+   <input name="metals" type="radio" id="unknown-properties" value="unknown-properties" id="radio-box"></input>
+   <label for="unknown-properties">Unknown properties</label>
+  </div>
+ </form>
+
+
+
+ <script src="styleBarCard.js"></script>
+ <script src="index.js"></script>
+</body>
+
+</head>
